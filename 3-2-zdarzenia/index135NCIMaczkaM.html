@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+  <head>
+    <title>Ajax. Kurs od podstaw. Część pierwsza: Wprowadzenie. Przykład #3.2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+    li {
+        padding: 5px;
+        border: 1px solid black;
+        width: 300px;
+        margin: 5px;
+    }
+    </style>
+    
+
+<script type="text/javascript">
+
+function onclickHandler()
+{
+    var el;
+    el = document.getElementById('tresc');
+	el.innerHTML = '<strong>Autorem zmian jest:</strong> 135NCIMaczkaM'; /*ta wartość odpowiada za zmianę tekstu */
+	el.style.border = '5px solid blue'; /* Ta wartość odpowiada za obramowanie tekstu */
+	el.style.background = '#f34337'; /* ta wartość odpowiada za kolor zakreślenia tekstu */
+}    
+
+function onmouseoverHandler()
+{
+    var el;
+    el = document.getElementById('tresc');
+    el.innerHTML = '<strong>Autorem zmian jest:</strong> 135NCIMaczkaM'; /*ta wartość odpowiada za zmianę tekstu */
+	el.style.border = '7px solid red'; /* Ta wartość odpowiada za obramowanie tekstu */
+	el.style.background = '#ff1897'; /* ta wartość odpowiada za kolor zakreślenia tekstu */
+}    
+
+function onmouseoutHandler()
+{
+    var el;
+    el = document.getElementById('tresc');
+    el.innerHTML = '<strong>Autorem zmian jest:</strong> 135NCIMaczkaM'; /*ta wartość odpowiada za zmianę tekstu */
+	el.style.border = '2px solid yellow'; /* Ta wartość odpowiada za obramowanie tekstu */
+	el.style.background = '#ff1147'; /* ta wartość odpowiada za kolor zakreślenia tekstu */
+}    
+
+</script>    
+
+    
+  </head>
+<body>
+
+<ul>
+<li onclick="onclickHandler();">onclick</li>
+<li onmouseover="onmouseoverHandler();">onmouseover</li>
+<li onmouseout="onmouseoutHandler();">onmouseout</li>
+</ul>
+
+<div id="tresc">Tekst tekst tekst...</div>
+
+</body>
+</html>
+
