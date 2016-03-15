@@ -6,11 +6,11 @@
     
     <style type="text/css">
     .tresc {
-        width: 300px;
-        border: 1px solid black;
+        width: 600px; /* zmieniłem szerokość obiektu */
+        border: 5px solid green; /* grubość obramowania */
         padding: 10px;
-        background: #e8fff1;        
-        margin: 10px;
+        background: #aabbcc; /* kolor tła */
+        margin: 12px; /* margines */
     }
     .minitresc {
         display: none;
@@ -33,7 +33,7 @@ function expandCollapse(Id)
         Id.innerHTML = '+';
     } else {
         n.style.display = 'block';                
-        n.innerHTML = 'A B C...';
+        n.innerHTML = '135NCIMaczkaM';
         Id.innerHTML = '-';        
     }
 }
